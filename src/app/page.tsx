@@ -6,12 +6,7 @@ export default function Home() {
     <main className='flex flex-col items-center justify-center h-screen'>
       <h1 className='text-4xl font-bold'>Hello, World!</h1>
 
-      <Image
-        src={`profile-ritesh-next${imgSrc}`}
-        alt='img'
-        width='64'
-        height='64'
-      />
+      <Image src={`${imgSrc}`} alt='img' width='64' height='64' />
     </main>
   );
 }
