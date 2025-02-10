@@ -9,7 +9,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'ritsrivastava01.github.io',
         port: '',
-        pathname: '/my-profile-ritesh-next/**',
+        pathname: '/profile-ritesh-next/**',
         search: ''
       }
     ]
