@@ -1,20 +1,10 @@
 /**
  * @type {import('next').NextConfig}
  */
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   output: 'export',
-  distDir: '.dist',
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'ritsrivastava01.github.io',
-        port: '',
-        pathname: '/profile-ritesh-next/**',
-        search: ''
-      }
-    ]
-  }
+  basePath: isProd ? '/profile-ritesh-next' : ''
 };
 
 export default nextConfig;
