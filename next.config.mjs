@@ -4,10 +4,16 @@
 const nextConfig = {
   output: 'export',
   images: {
-    loader: 'akamai',
-    path: ''
-  },
-  assetPrefix: '/profile-ritesh-next'
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'ritsrivastava01.github.io',
+        port: '',
+        pathname: '/my-profile-ritesh-next/**',
+        search: ''
+      }
+    ]
+  }
 };
 
 export default nextConfig;
