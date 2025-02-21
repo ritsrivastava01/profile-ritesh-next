@@ -2,13 +2,19 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+use below scripi to create new Next JS project wiith this boilerplate:
+
+```
+npx create-next-app@latest [your-site-name] -e https://github.com/ritsrivastava01/next15_boilerplate/tree/main
+```
+ ## Run the development server:
 
 ```bash
+npm install
 npm run dev
 ```
 
-## Clear the Existing Git History
+## Clear the Existing Git History (Optional)
 
 The boilerplate includes a script to remove the .git folder, allowing you to start with a fresh Git repository. Run the following command:
 
@@ -28,14 +34,14 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ### Dependencies
 
-1. ** clsx: ** A utility for conditionally joining CSS class names in React components.
-2. ** next-intl:** A library for adding internationalization (i18n) support in Next.js applications.
-3. prettier-plugin-tailwindcss: A Prettier plugin to automatically sort Tailwind CSS classes for consistent styling.
-4. tailwind-merge: Merges Tailwind CSS class names intelligently, resolving conflicts between conflicting utilities.
+1. **clsx:** A utility for conditionally joining CSS class names in React components.
+2. **next-intl:** A library for adding internationalization (i18n) support in Next.js applications.
+3. **prettier-plugin-tailwindcss:** A Prettier plugin to automatically sort Tailwind CSS classes for consistent styling.
+4. **tailwind-merge:** Merges Tailwind CSS class names intelligently, resolving conflicts between conflicting utilities.
 
 ### Dev Dependencies
 
-1.** @commitlint/config-conventional:** Enforces standardized commit message conventions for consistent versioning. 2. @trivago/prettier-plugin-sort-imports: Automatically sorts and organizes import statements for cleaner code. 3. prettier-plugin-organize-imports: Groups and orders imports consistently to maintain code readability.
+**@commitlint/config-conventional ** Enforces standardized commit message conventions for consistent versioning. 2. @trivago/prettier-plugin-sort-imports: Automatically sorts and organizes import statements for cleaner code. 3. prettier-plugin-organize-imports: Groups and orders imports consistently to maintain code readability.
 
 ...many more
 
