@@ -41,9 +41,11 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ### Dev Dependencies
 
-**@commitlint/config-conventional ** Enforces standardized commit message conventions for consistent versioning. 2. @trivago/prettier-plugin-sort-imports: Automatically sorts and organizes import statements for cleaner code. 3. prettier-plugin-organize-imports: Groups and orders imports consistently to maintain code readability.
+1. **@commitlint/config-conventional** Enforces standardized commit message conventions for consistent versioning. 
+2. **@trivago/prettier-plugin-sort-imports:** Automatically sorts and organizes import statements for cleaner code.
+3. **prettier-plugin-organize-imports:** Groups and orders imports consistently to maintain code readability.
 
-...many more
+   ...many more
 
 ## Learn More
 
