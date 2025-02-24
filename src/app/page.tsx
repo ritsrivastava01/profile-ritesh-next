@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const imgSrc = `${process.env.BASE_PATH}/images/img1.png`;
+const imgSrc = `/images/img1.png`;
 
 export default function Home() {
   console.log('process.env.BASE_PATH', process.env.BASE_PATH);
