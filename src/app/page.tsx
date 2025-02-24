@@ -8,7 +8,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 const imgSrc = `${basePath}/images/img1.png`;
 
 export default function Home() {
-  console.log('Base Path:', basePath);
+  console.log('process.env: ', process.env);
   console.log('NEXT_PUBLIC_BASE_PATH:', process.env.NEXT_PUBLIC_BASE_PATH);
   return (
     <main className='flex flex-col items-center justify-center h-screen'>
