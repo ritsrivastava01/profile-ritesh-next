@@ -1,7 +1,4 @@
 import Image from 'next/image';
-// const isProd = process.env.NODE_ENV === 'production';
-//const basePath = isProd ? '' : '';
-// const imgSrc = `/images/img1.png`;
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
