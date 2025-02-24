@@ -7,7 +7,7 @@ const nextConfig = {
   basePath: isProd ? '/profile-ritesh-next' : '',
   assetPrefix: isProd ? '/profile-ritesh-next' : '',
   env: {
-    BASE_PATH: isProd ? '/profile-ritesh-next' : ''
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/profile-ritesh-next' : ''
   }
 };
 
