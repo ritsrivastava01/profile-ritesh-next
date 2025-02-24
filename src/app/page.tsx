@@ -4,10 +4,11 @@ import Image from 'next/image';
 // const imgSrc = `/images/img1.png`;
 
 const basePath = process.env.BASE_PATH ?? '';
+
 const imgSrc = `${basePath}/images/img1.png`;
 
 export default function Home() {
-  console.log(imgSrc);
+  console.log(basePath, process.env.NODE_ENV);
   return (
     <main className='flex flex-col items-center justify-center h-screen'>
       <h1 className='text-4xl font-bold'>Hello, World!</h1>
