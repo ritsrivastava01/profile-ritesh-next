@@ -1,10 +1,10 @@
-import getConfig from 'next/config';
 import Image from 'next/image';
 // const isProd = process.env.NODE_ENV === 'production';
 //const basePath = isProd ? '' : '';
 // const imgSrc = `/images/img1.png`;
-const { publicRuntimeConfig } = getConfig();
-const imgSrc = `${publicRuntimeConfig.basePath}/images/img1.png`;
+
+const basePath = process.env.BASE_PATH ?? '';
+const imgSrc = `${basePath}/images/img1.png`;
 
 export default function Home() {
   console.log(imgSrc);
