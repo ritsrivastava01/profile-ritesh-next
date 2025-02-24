@@ -1,7 +1,7 @@
 import Image from 'next/image';
-const isProd = process.env.NODE_ENV === 'production';
-const basePath = isProd ? '' : '/';
-const imgSrc = `${basePath}images/img1.png`;
+// const isProd = process.env.NODE_ENV === 'production';
+//const basePath = isProd ? '' : '';
+const imgSrc = `/images/img1.png`;
 
 export default function Home() {
   console.log(imgSrc);
