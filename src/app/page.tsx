@@ -1,5 +1,5 @@
 import Image from 'next/image';
-const imgSrc = 'images/img1.png';
+const imgSrc = '/images/img1.png';
 
 export default function Home() {
   return (
