@@ -1,5 +1,8 @@
 import Image from 'next/image';
-const imgSrc = '/images/img1.png';
+const imgSrc =
+  process.env.NODE_ENV === 'production'
+    ? '/images/img1.png'
+    : 'images/img1.png';
 
 export default function Home() {
   return (
