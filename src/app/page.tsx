@@ -1,13 +1,7 @@
-import Image from 'next/image';
+import { redirect } from 'next/navigation';
 
-const imgSrc = `${process.env.BASE_PATH}/images/img1.png`;
-
-export default function Home() {
-  return (
-    <main className='flex flex-col items-center justify-center h-screen'>
-      <h1 className='text-4xl font-bold'>Hello, World!</h1>
-
-      <Image src={`${imgSrc}`} alt='img' width='64' height='64' />
-    </main>
-  );
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  console.log('root page');
+  redirect('/en');
 }
