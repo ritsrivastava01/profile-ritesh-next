@@ -1,4 +1,9 @@
 {
+  "Header": {
+    "about": "About",
+    "home": "Home",
+    "title": "Next JS Internationalization example"
+  },
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page."
