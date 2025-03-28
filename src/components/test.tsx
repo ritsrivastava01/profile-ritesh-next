@@ -15,7 +15,7 @@ const Test = () => {
   useEffect(() => {
     const fetchAppConfig = async () => {
       try {
-        const experienceData = await loadSingleYMLConfig<AppConfig>('config'); // Specify the type as Experience
+        const experienceData = await loadSingleYMLConfig<AppConfig>('/config.yml'); // Specify the type as Experience
         setConfig(experienceData);
       } catch (error) {
         console.error('Error loading YAML file:', error);
