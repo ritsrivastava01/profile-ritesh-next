@@ -1,21 +1,47 @@
 import yaml from 'js-yaml';
-
-async function loadConfig<T extends Record<string, unknown>>(
-  filePath: string,
-): Promise<T> {
+import { getStaticPathWithBasePath } from './getPath';
+async function loadArrayYMLConfig<T = unknown>(file: string): Promise<T[]> {
+  const filePath = getStaticPathWithBasePath(file);
   try {
-    const basePath = process.env.__NEXT_ROUTER_BASEPATH ?? '';
-    const configPath = `${basePath}${filePath}`;
-    const res = await fetch(configPath);
+    const res = await fetch(`/${filePath}.yml`);
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
     const text = await res.text();
-    return yaml.load(text) as T;
+    const data: unknown = yaml.load(text);
+    if (Array.isArray(data)) {
+      return data;
+    } else {
+      console.warn(`Unexpected data structure in ${filePath}`);
+      return [];
+    }
   } catch (error) {
     console.error(`Error loading config from ${filePath}:`, error);
     throw error;
   }
 }
 
-export default loadConfig;
+async function loadSingleYMLConfig<T = unknown>(file: string): Promise<T> {
+  const filePath = getStaticPathWithBasePath(file);
+
+  try {
+    const res = await fetch(`/${filePath}.yml`);
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+    const text = await res.text();
+    const data = yaml.load(text) as T;
+
+    if (Array.isArray(data)) {
+      console.warn(`Unexpected data structure in ${filePath}`);
+      return '' as T;
+    } else {
+      return data;
+    }
+  } catch (error) {
+    console.error(`Error loading config from ${filePath}:`, error);
+    throw error;
+  }
+}
+
+export { loadArrayYMLConfig, loadSingleYMLConfig };
