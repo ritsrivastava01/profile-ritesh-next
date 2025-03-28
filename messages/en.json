@@ -1,0 +1,16 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page."
+  },
+  "LocaleLayout": {
+    "title": "Next JS Internationalization example"
+  },
+  "NotFoundPage": {
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+    "title": "Page not found"
+  },
+  "LocaleSwitcher": {
+    "locale": "{locale, select, nl {Nederlands} en {English}  other {Unknown}}"
+  }
+}
