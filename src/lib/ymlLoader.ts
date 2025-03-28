@@ -3,7 +3,7 @@ import { getStaticPathWithBasePath } from './getPath';
 async function loadArrayYMLConfig<T = unknown>(file: string): Promise<T[]> {
   const filePath = getStaticPathWithBasePath(file);
   try {
-    const res = await fetch(`/${filePath}.yml`);
+    const res = await fetch(filePath);
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
     }

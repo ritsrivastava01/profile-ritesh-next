@@ -16,7 +16,8 @@ const Hero = () => {
   useEffect(() => {
     const fetchAppConfig = async () => {
       try {
-        const experienceData = await loadArrayYMLConfig<Experience>('experience'); // Specify the type as Experience
+        const experienceData =
+          await loadArrayYMLConfig<Experience>('/experience.yml'); // Specify the type as Experience
         console.log(experienceData);
         setConfig(experienceData);
       } catch (error) {
