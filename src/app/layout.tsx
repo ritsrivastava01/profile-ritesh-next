@@ -1,21 +1,21 @@
-import Footer from '@/ui/Footer';
-import { Header } from '@/ui/Header';
+import { classMerge } from '@/utilities/classMerge';
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Raleway } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
+// const geistSans = Geist({
+//   variable: '--font-geist-sans',
+//   subsets: ['latin'],
+// });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
+// const geistMono = Geist_Mono({
+//   variable: '--font-geist-mono',
+//   subsets: ['latin'],
+// });
+const roboto = Raleway({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Ritz-FE',
+  title: 'Ritz | Front End',
   description: 'Ritesh-Front End Portfolio',
 };
 
@@ -26,10 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header />
+      <body
+        className={classMerge(
+          roboto.className,
+          'flex h-full flex-col bg-slate-900 text-slate-400 antialiased',
+        )}
+      >
+        {/* <Header /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

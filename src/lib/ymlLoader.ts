@@ -1,4 +1,5 @@
 import yaml from 'js-yaml';
+import { cache } from 'react';
 import { getStaticPathWithBasePath } from './getPath';
 async function loadArrayYMLConfig<T = unknown>(file: string): Promise<T[]> {
   const filePath = getStaticPathWithBasePath(file);
@@ -44,4 +45,5 @@ async function loadSingleYMLConfig<T = unknown>(file: string): Promise<T> {
   }
 }
 
-export { loadArrayYMLConfig, loadSingleYMLConfig };
+export const loadSingleYMLConfigCached = cache(loadSingleYMLConfig);
+//export { loadArrayYMLConfig, loadSingleYMLConfig };

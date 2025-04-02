@@ -1,0 +1,23 @@
+title:
+  name: Hello, I'm  <span class='text-blue-500'>Ritesh Srivastava</span>
+  title1: 'Front End Engineer'
+  title2: I build accessible, pixel-perfect digital experiences for the web.'
+
+feature:
+  one:
+    title: Fast & SEO
+    subtitle: My highest priority is fast load times, lag free interaction. Also I make sure that the website is SEO friendly.
+  two:
+    title: Responsive
+    subtitle: My layouts are responsive so it will work on any device. Desktop, tablet or mobile..
+  three:
+    title: Intuitive
+    subtitle: Strong preference for easy to use, intuitive UX/UI. I love to make things which are easy to use and beautiful..
+  five:
+    title: Dynamic
+    subtitle: Websites don't have to be static, I love making pages come to life. I have strong skills in this.
+
+aboutMe:
+  - "<b>I</b> am a <span class='text-amber-50'>Microsoft Certified Specialist</span> in Programming in HTML5 with JavaScript and CSS3 with 15+ years of experience in front-end development, specializing in <span class='text-amber-50'>Next.js</span>, SSR, SEO, and performance optimization. Skilled in <span class='text-amber-50'>React</span>, <span class='text-amber-50'>Angular</span>, <span class='text-amber-50'>TypeScript</span>, and modern architectures like micro frontends and monorepos, I have expertise across the entire SDLC, ensuring high-quality, scalable applications. Passionate about code quality, accessibility, and Core Web Vitals, I leverage tools like Lighthouse, Jest, Cypress, and Webpack. As an Agile practitioner, I actively contribute to Scrum events, mentoring, and cross-team collaboration, fostering knowledge-sharing and team growth. I spend most of my days programming in <span class='text-amber-50'>NextJs</span>, android app, npm packages, contributing to open source projects and organising local developer user groups. I am currently based in Almere, Netherlands with my wife, son and daughter."
+  - "<b>I</b> spend most of my days programming in <span class='text-amber-50'>NextJs</span>, android app, npm packages, contributing to open source projects and organising local developer user groups. I am currently based in Almere, Netherlands with my wife, son and daughter."
+  - 'Apart from my day to day activities, I like to go for adventurous trip, cooking and listening music.'
